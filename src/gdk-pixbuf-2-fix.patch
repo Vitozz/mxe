@@ -1,0 +1,12 @@
+diff -urpN gdk-pixbuf-2.32.3/gdk-pixbuf/gdk-pixbuf-simple-anim.c gdk-pixbuf-2.32.3-new/gdk-pixbuf/gdk-pixbuf-simple-anim.c
+--- gdk-pixbuf-2.32.3/gdk-pixbuf/gdk-pixbuf-simple-anim.c	2015-12-14 13:59:08.000000000 +0200
++++ gdk-pixbuf-2.32.3-new/gdk-pixbuf/gdk-pixbuf-simple-anim.c	2020-12-14 11:17:47.613616635 +0200
+@@ -27,7 +27,7 @@
+ #include <glib.h>
+ 
+ #define GDK_PIXBUF_C_COMPILATION
+-#include "gdk-pixbuf.h"
++//#include "gdk-pixbuf.h"
+ #include "gdk-pixbuf-private.h"
+ #include "gdk-pixbuf-simple-anim.h"
+ 
