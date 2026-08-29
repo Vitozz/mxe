@@ -1,0 +1,21 @@
+diff --git a/include/safe-ctype.h b/include/safe-ctype.h
+index 9e9aded..a8001b0 100644
+--- a/include/safe-ctype.h
++++ b/include/safe-ctype.h
+@@ -120,7 +120,7 @@ extern const unsigned char  _sch_tolower[256];
+    So we include ctype.h here and then immediately redefine its macros.  */
+ 
+ #include <ctype.h>
+-#undef isalpha
++/*#undef isalpha
+ #define isalpha(c) do_not_use_isalpha_with_safe_ctype
+ #undef isalnum
+ #define isalnum(c) do_not_use_isalnum_with_safe_ctype
+@@ -145,6 +145,6 @@ extern const unsigned char  _sch_tolower[256];
+ #undef toupper
+ #define toupper(c) do_not_use_toupper_with_safe_ctype
+ #undef tolower
+-#define tolower(c) do_not_use_tolower_with_safe_ctype
++#define tolower(c) do_not_use_tolower_with_safe_ctype*/
+ 
+ #endif /* SAFE_CTYPE_H */

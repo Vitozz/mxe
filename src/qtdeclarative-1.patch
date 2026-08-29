@@ -1,0 +1,10 @@
+--- a/src/qml/compiler/qv4compiler.cpp	2024-11-20 15:56:37.000000000 +0200
++++ b/src/qml/compiler/qv4compiler.cpp	2025-09-10 14:49:52.710249711 +0300
+@@ -39,6 +39,7 @@
+ 
+ #include <qv4compiler_p.h>
+ #include <qv4codegen_p.h>
++#include <cstdint>
+ #include <private/qv4compileddata_p.h>
+ #include <private/qv4staticvalue_p.h>
+ #include <private/qv4alloca_p.h>

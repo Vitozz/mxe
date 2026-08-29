@@ -1,0 +1,16 @@
+diff --git a/libcody/cody.hh b/libcody/cody.hh
+index 789ce9e..cc0f812 100644
+--- a/libcody/cody.hh
++++ b/libcody/cody.hh
+@@ -48,7 +48,11 @@ namespace Detail  {
+ // C++11 doesn't have utf8 character literals :(
+ 
+ template<unsigned I>
++#if __cplusplus >= 202002L
++constexpr char S2C (char8_t const (&s)[I])
++#else
+ constexpr char S2C (char const (&s)[I])
++#endif
+ {
+   static_assert (I == 2, "only single octet strings may be converted");
+   return s[0];

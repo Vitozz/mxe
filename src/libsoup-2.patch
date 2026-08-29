@@ -1,0 +1,11 @@
+--- a/libsoup/auth/soup-auth-ntlm.c	2021-11-24 22:32:02.000000000 +0200
++++ b/libsoup/auth/soup-auth-ntlm.c	2025-09-10 17:37:58.422856652 +0300
+@@ -20,6 +20,8 @@
+ #include "soup.h"
+ #include "soup-message-private.h"
+ 
++#define __USE_MINGW_ANSI_STDIO 0
++
+ static void        soup_ntlm_lanmanager_hash   (const char  *password,
+ 						guchar       hash[21]);
+ static void        soup_ntlm_nt_hash           (const char  *password,

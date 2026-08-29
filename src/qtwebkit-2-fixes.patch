@@ -1,0 +1,25 @@
+diff -urpN a/Source/ThirdParty/ANGLE/src/common/mathutil.h b/Source/ThirdParty/ANGLE/src/common/mathutil.h
+--- a/Source/ThirdParty/ANGLE/src/common/mathutil.h	2020-09-22 14:30:04.000000000 +0300
++++ b/Source/ThirdParty/ANGLE/src/common/mathutil.h	2024-06-14 02:29:50.011687352 +0300
+@@ -16,6 +16,7 @@
+ #include <algorithm>
+ #include <string.h>
+ #include <stdlib.h>
++#include <cstdint>
+ 
+ namespace gl
+ {
+
+--- a/Source/JavaScriptCore/offlineasm/parser.rb
++++ b/Source/JavaScriptCore/offlineasm/parser.rb
+@@ -145,6 +145,10 @@
+         @type = type
+         @string = string
+     end
++
++    def =~(other)
++        false
++    end
+ end
+ 
+ #
