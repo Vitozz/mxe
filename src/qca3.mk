@@ -4,8 +4,8 @@ PKG             := qca3
 $(PKG)_WEBSITE  := https://github.com/psi-im/qca
 $(PKG)_DESCR    := Qt Cryptographic Architecture
 $(PKG)_IGNORE   :=
-$(PKG)_VERSION  := 3.0.6
-$(PKG)_CHECKSUM := 9c780211bbef1191fbf32f62b3c9fe5595fc282f228a3de792d0c442a736dc8a
+$(PKG)_VERSION  := 3.0.11
+$(PKG)_CHECKSUM := aaea814f9c0ca51f891478e38c656b6af67c3899d1703283482703521b90fb2f
 $(PKG)_GH_CONF  := psi-im/qca/tags,v
 $(PKG)_DEPS     := cc openssl qtbase
 
